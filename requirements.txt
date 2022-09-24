@@ -31,4 +31,5 @@ chardet
 requests==2.21.0
 numpy==1.23.1
 tensorflow-cpu==2.10.0
+gensim 3.8.3
 bnlp-toolkit
