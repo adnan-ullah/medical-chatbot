@@ -1,7 +1,7 @@
 # DETECT PORTION [Author : PCIU__std]
 
 
-from get_Data import bot_response, findCallName
+from get_Data import bot_response
 
 
 # FLASK PORTION
@@ -21,15 +21,7 @@ def home():
 def response():
     if request.method == "POST":
         query = dict(request.form)['query']
-        call_name = findCallName(query)
-
-        checkingCallHime = "%% HUMAN %%"
         bot_reply = bot_response(query)
-
-        if checkingCallHime in bot_reply:
-
-            bot_reply = bot_reply.replace(checkingCallHime, call_name)
-
         result = bot_reply
 
         return jsonify({"response": result})
