@@ -18,6 +18,31 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 
+from bnlp import NER
+bn_ner = NER()
+
+def findCallName(text):
+    model_path = "assets/bn_ner.pkl"
+
+    res = bn_ner.tag(model_path, text)
+    print(res)
+    res = reversed(res)
+    checking = ["S-PER", "E-PER", "B-PER"]
+    call_name= "অমুক"
+    found = False
+    for i in res:
+        for j in checking:
+            if i[1] == j:
+
+            
+                call_name = i[0]
+                
+                found = True
+                break
+            if found:
+                break
+
+    return call_name
 
 
 def cleaning(text):
