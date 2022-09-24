@@ -20,8 +20,8 @@ def home():
 @app.route('/bot', methods=["GET", "POST"])
 def response():
     if request.method == "POST":
-        query = dict(request.form)['query']
-        bot_reply = bot_response(query)
+        query = request.form
+        bot_reply = bot_response(query['query'])
         result = bot_reply
 
         return jsonify({"response": result})
