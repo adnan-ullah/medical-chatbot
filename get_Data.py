@@ -18,8 +18,6 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 
-from bnlp import NER
-bn_ner = NER()
 
 
 
