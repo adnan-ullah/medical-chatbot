@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# DETECT PORTION [Author : PCIU__std]
 
-=======
->>>>>>> update project
 
 from get_Data import bot_response
 
@@ -10,7 +6,6 @@ from get_Data import bot_response
 # FLASK PORTION
 
 from flask import Flask, jsonify, request
-
 
 app = Flask(__name__)
 
