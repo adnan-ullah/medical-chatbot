@@ -8,10 +8,10 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
-intents_file = json.loads(open('assets/ChatData (1).json').read())
-lem_words = pickle.load(open('assets/lem_words (1).pkl','rb'))
-classes = pickle.load(open('assets/classes (1).pkl','rb'))
-bot_model = keras.models.load_model('assets/chatbot_model (1).h5')
+intents_file = json.loads(open('assetsPhysical/ChatData (1).json').read())
+lem_words = pickle.load(open('assetsPhysical/lem_words (1).pkl','rb'))
+classes = pickle.load(open('assetsPhysical/classes (1).pkl','rb'))
+bot_model = keras.models.load_model('assetsPhysical/chatbot_model (1).h5')
 
 nltk.download('punkt')
 nltk.download('wordnet')
