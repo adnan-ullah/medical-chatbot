@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> e7d77cc698137e6ecc290d23afef937a89050e85
 
 from get_Data import bot_response
 
 
 # FLASK PORTION
+<<<<<<< HEAD
+=======
+
+from flask import Flask, jsonify, request
+>>>>>>> e7d77cc698137e6ecc290d23afef937a89050e85
 
 from flask import Flask, jsonify, request
 
