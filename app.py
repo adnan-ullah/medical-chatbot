@@ -40,8 +40,6 @@ def response():
             result = resultData[0]
             userData = ''
 
-        bot_reply = bot_response(query['query'])
-        result = bot_reply
 
         return jsonify({"response": result})
     else:
