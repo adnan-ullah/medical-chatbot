@@ -26,7 +26,11 @@ def response():
         text = query['query']
         bot_reply = bot_response(text)
 
-        if bot_reply[1][0] != "Result" and bot_reply[1]!="":
+        if bot_reply[1][0]=="":
+          print(bot_reply[0])
+          userData = ""
+
+        elif bot_reply[1][0] != "Result" and bot_reply[1]!="":
             result = bot_reply[1][0]
             userData = userData + text
 
@@ -35,11 +39,6 @@ def response():
             resultData = bot_response(userData)
             result = resultData[0]
             userData = ''
-
-
-        else:
-            result = bot_reply
-            userData = ""
 
         bot_reply = bot_response(query['query'])
         result = bot_reply
