@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # DETECT PORTION [Author : PCIU__std]
 
+=======
+>>>>>>> update project
 
 from get_Data import bot_response
 

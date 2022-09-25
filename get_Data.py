@@ -63,6 +63,9 @@ def bot_response(text):
     ints = class_prediction(text, bot_model)
     response = getbotResponse(ints, intents_file)
     return response
+
+
+  
  
 
 
