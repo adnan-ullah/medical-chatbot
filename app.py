@@ -55,7 +55,9 @@ def response():
 
             clearingTextFile("userGroupQuery.txt")
             
-
+        if "%% USER %%" in result:
+                print("FOUND")
+                result = result.replace("%% USER %%", "আদনান")
 
         return jsonify({"response":result})
     else:
